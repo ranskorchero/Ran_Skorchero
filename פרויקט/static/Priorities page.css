@@ -86,8 +86,8 @@
   
   /* Green */
   .success {
-    border-color: #04AA6D;
-    color: green;
+    border-color: #eaea11;
+    color: rgb(0, 0, 0);
   }
   default:hover {
     background: #e7e7e7;

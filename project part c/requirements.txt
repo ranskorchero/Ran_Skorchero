@@ -1,0 +1,35 @@
+Module:
+•	csvtojson
+•	express
+•	body-parser
+•	pug
+•	nodemon
+•	mysql2
+•	mssql
+
+Installation
+1. make sure you have mySqlServer installed and running
+2. configure your dB with user name, password and email
+4. Add inside dB folder a file called config.db.js paste this object and fill in your details
+5. run npm i to install dependencies
+6. To run the server run
+- npm run dev - for development mode
+- npm start - for reading 
+7. Go to http://localhost:3000 on your browser
+
+To insert default data you will need to follow those steps:
+1. go to http://localhost:3000/CreateTables - to create the relevant tables
+2. Go to http://localhost:3000/InsertDataInTables - to insert the data.
+
+Create Tables
+'CREATE TABLE  aritcles (
+    name NVARCHAR(255) NOT NULL PRIMARY KEY,
+    type VARCHAR(255) NOT NULL,
+    text VARCHAR(1000) NOT NULL
+ENGINE=InnoDB DEFAULT CHARSET=utf8';
+ 
+CREATE TABLE `users` (
+  `Name` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

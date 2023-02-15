@@ -1,0 +1,117 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Articles &amp; Chill
+  link(rel='stylesheet' href='/css.css')
+  script(defer='' src='/js.js')
+
+  
+button.tablink(onclick="openPage('Home', this, 'red')") Home
+button#defaultOpen.tablink(onclick="openPage('News', this, 'green')") News
+button.tablink(onclick="openPage('Contact', this, 'blue')") Topics
+button.tablink(onclick="openPage('About', this, 'orange')") About
+#Home.tabcontent
+  h3 Home
+  p Home is where the heart is..
+  .slideshow-container
+    // Full-width slides/quotes
+    .mySlides
+      q
+        | I love you the more in that I believe you had liked me for my own sake and for nothing else
+      p.author - John Keats
+    .mySlides
+      q But man is not made for defeat. A man can be destroyed but not defeated.
+      p.author - Ernest Hemingway
+    .mySlides
+      q I have not failed. I&apos;ve just found 10,000 ways that won&apos;t work.
+      p.author - Thomas A. Edison
+    // Next/prev buttons
+    a.prev(onclick='plusSlides(-1)') &#x276E;
+    a.next(onclick='plusSlides(1)') &#x276F;
+  // Dots/bullets/indicators
+  .dot-container
+    span.dot(onclick='currentSlide(1)')
+    span.dot(onclick='currentSlide(2)')
+    span.dot(onclick='currentSlide(3)')
+  form(action='/action_page.php')
+#News.tabcontent
+  h3 News
+  p Some news this fine day!
+  button.accordion Plato&rsquo;s Allegory of the Cave
+  .panel
+    p
+      | plato&rsquo;s &ldquo;Allegory of the Cave&rdquo; is one of the most well-known
+      | philosophical concepts in history.As such, it only makes sense
+      | that numerous filmmakers would try to incorporate this philosophy
+      | into their movies. But what exactly is it?
+    a(href='https://www.studiobinder.com/blog/platos-allegory-of-the-cave/') For more
+  button.accordion The Mind/Brain Identity Theory
+  .panel
+    p
+      | The identity theory of mind holds that states and processes
+      | of the mind are identical to states and processes of the brain.
+      | Strictly speaking, it need not hold that the mind is identical
+      | to the brain...
+    a(href='https://plato.stanford.edu/entries/mind-identity/')  For more
+  button.accordion What is philosophy?
+  .panel
+    p
+      | A definition of philosophy is notoriously difficult.
+      | However, it is important, for anyone writing or training
+      | about doing philosophy, first of all to spell out what they
+      | mean by it so that the reader has some idea about what kind
+      | of philosophy they will encounter and, when training people
+      | to facilitate philosophy, to provide criteria...
+    a(href='https://www.philosophy-foundation.org/what-is-philosophy')  For more
+  button.accordion A quantum computer has simulated a wormhole for the first time
+  .panel
+    p
+      | Researchers have used Google&apos;s Sycamore quantum computer to
+      | simulate a simplified wormhole for the first time, and sent
+      | a piece of quantum information through it...
+    a(href='https://www.newscientist.com/article/2349118-a-quantum-computer-has-simulated-a-wormhole-for-the-first-time/')  For more
+  button.accordion The blessing and the curse of the axion&rsquo;s rise in US particle physics
+  .panel
+    p
+      | Since the Large Hadron Collider turned up nothing in its search
+      | for supersymmetry, physicists have turned their attention to the axion,
+      | says Chanda Prescod-Weinstein, a self-described superfan of this hypothetical particle
+    a(href='https://www.newscientist.com/article/mg25634140-300-the-blessing-and-the-curse-of-the-axions-rise-in-us-particle-physics/')  For more
+#Contact.tabcontent
+  h3 Topics
+  p  explore the human knoledge
+  .imagecontainer
+    .container1
+      a(href='Philosophy.html')
+        img.image(src='/img/image philosophy 2.0.png' alt='Avatar')
+      .overlay
+        | Philosophy
+    br
+    .container2
+      a(href='phisics.html')
+        img.image(src='/img/phisics 2.0.jpg' alt='Avatar')
+      .overlay
+        | phisics
+    br
+    .container3
+      a(href='art.html')
+        img.image(src='/img/art image 2.0.jpg' alt='Avatar')
+      .overlay
+        | Art
+    br
+    .container4
+      a(href='history.html')
+        img.image(src='/img/history 2.0.jpg' alt='Avatar')
+      .overlay
+        | History
+    br
+#About.tabcontent
+  h3 About
+  p Who we are and what we do.
+  p
+    | We&rsquo;re powered by a community of interesting
+    | people with curious minds, and we empower people
+    | to keep their minds focused, stimulated, and nourished.
+    | Which makes us a refreshing change from other digital spaces.

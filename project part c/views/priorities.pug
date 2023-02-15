@@ -1,0 +1,27 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Articles &amp; Chill
+  link(rel='stylesheet' href='../static/css.css')
+h1
+  | Tell us what interests you
+.container
+  form(form='' method='post' action='/submit-form')
+    ul.ks-cboxtags
+      li
+        input#Art(type='checkbox' value='Art' checked='')
+        label(for='Art') Art
+      li
+        input#Philosophy(type='checkbox' value='Philosophy' checked='')
+        label(for='Philosophy') Philosophy
+      li
+        input#History(type='checkbox' value='History' checked='')
+        label(for='History') History
+      li
+        input#Physics(type='checkbox' value='Physics' checked='')
+        label(for='Physics') Physics
+      li
+        input#submit(type='submit' value='continue' checked='')
+        label(for='checkboxFive') continue
